@@ -133,12 +133,13 @@ nav {
     top: 0px;
 }
 
+
+
 .welcome {
     background-image: url('./public/welcomeBg.png');
     width: 100%;
-    max-width: 1440px;
     background-size: cover;
-    height: 668px;
+    height: 100%;
     left: 0px;
     top: 0px;
 }
@@ -171,9 +172,7 @@ nav {
 }
 
 .assistence_h2 {
-    position: absolute;
     width: 580px;
-    height: 72px;
     top: 689px;
 
     font-family: 'Montserrat';
@@ -186,11 +185,8 @@ nav {
 }
 
 .assistence_p {
-    position: absolute;
     width: 594px;
-    height: 45px;
     top: 750px;
-
     font-family: 'Montserrat';
     font-style: normal;
     line-height: 22px;
@@ -207,7 +203,6 @@ nav {
     width: 592px;
     height: 390px;
     font-weight:normal;
-    margin-top: 65px;
 }
 
 .assistence strong {
@@ -217,7 +212,6 @@ nav {
 }
 
 .assistence .balloon-2{
-    position: absolute;
     width: 496px;
     left: 839px;
     top: 650px;
@@ -276,7 +270,6 @@ nav {
 
 .oferece_plano {
     margin-top: 150px;
-    width: 1440px;
     height: 379px;
     background: #F1F1F1;
     padding-left: 110px;
@@ -325,6 +318,7 @@ nav {
 }
 .works .tracks p {
     font-size: 22px;
+    color: #4E4B59;
 }
 .works .track {
     display: flex;
@@ -465,7 +459,7 @@ nav {
     display: flex;
     height: 386px;
     height: 386px;
-    top: -212px;
+    top: -172px;
 }
 
 .big-balloon h3 {
@@ -486,13 +480,17 @@ nav {
     bottom: 35px;
     right: 35px;
 }
+.abas {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding-top: 30px;
+}
 
 .aba1{
     width: 550px;
     height: 52px;
-    position: relative;
-    left: 170px;
-    top: -160px;
     background: #FAFAFA;
     border-radius: 4px 0px 0px 0px;
     font-style: normal;
@@ -534,9 +532,6 @@ nav {
 .aba2{
     width: 550px;
     height: 52px;
-    position: relative;
-    left: 720px;
-    top: -212px;
     border-radius: 4px 0px 0px 0px;
     background: #FAFAFA;
     border-bottom: 1px solid #6741A3;
@@ -664,12 +659,63 @@ nav {
 .big-ballon2{
     height: 500px;
     width: 1170px;
-    position: relative;
-    left: 140px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     top: -118px;
+}
+
+.economy {
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+.economy a{
+    text-decoration: none;
+}
+.economy button{
+    width: 148px;
+    height: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 12px;
+    background-color: #350A7C;
+    border-radius: 5px;
+}
+.economy p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #4E4B59;
+    max-width: 542px;
+}
+
+.economy .img-content {
+   position: relative;
+}
+.economy .img-content img{
+    z-index: 1;
+}
+.economy .img-content #pontos {
+   position: absolute;
+   right: -40px;
+   top: -40px;
+   z-index: 0;
+}
+.economy .img-content #barras {
+   position: absolute;
+   left: 0;
+   bottom: -10px;
+   z-index: 0;
 }
 
 .esquerdo p{
@@ -882,6 +928,19 @@ footer .termos, footer .termos a {
     font-size: 16px;
 }
 
+
+@media all and (min-width: 1440px)  {
+    .fundoquadrado {
+        background: linear-gradient(98.26deg, #AB7AFC 3%, #462C6A 96.14%);
+        background-image: url('./public/retang.png');
+        background-size: cover;
+        width: 100%;
+        height: 888px;
+        left: 0px;
+        top: 0px;
+    }
+}
+
 @media all and (max-width: 1200px) {
 
     .modal .cards-grid {
@@ -933,6 +992,7 @@ footer .termos, footer .termos a {
 
     .assistence {
         text-align: center;
+        position: relative;
     }
 
     .assistence .images{
