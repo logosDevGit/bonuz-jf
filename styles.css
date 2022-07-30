@@ -28,8 +28,7 @@ p{font-size: 18px;}
 .dn-desk {
     display: none !important;
 }
-.bg-red {
-    background-color: #E80537;
+.collapse-button {
     display: flex;
     justify-content: flex-end;
 }
@@ -980,15 +979,22 @@ footer .termos, footer .termos a {
         height: auto;
         padding-bottom: 100px;
         text-align: center;
-        background-image: url('/public/bg-w-mobile.png') !important;
+        background-image: none;
     }
-    
-    .welcome .container {
-        flex-wrap: wrap;
+
+    .welcome .info {
+        position: relative;
+        top: 150px;
+        left: 0;
     }
 
     .welcome img {
-        width: 300px;
+        width: auto;
+    } 
+    
+    .welcome .info p {
+        line-height: initial;
+        padding: 20px 0;
     }
 
     .assistence {

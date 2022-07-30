@@ -13,26 +13,28 @@
     <title>Bonuz | Jurídico Familiar</title>
 </head>
 <body>
-    <nav class="topo">
-        <div>
-            <img class="logo" src="public/bonuzLogo.png" alt="Logo escrito bonuz jurídico familar">
+    <nav class="topo flex-column">
+        <div class="d-flex justify-content-between w-100 align-items-center">
+            <div>
+                <img class="logo" src="public/bonuzLogo.png" alt="Logo escrito bonuz jurídico familar">
+            </div>
+            <div class="dn-mobile">
+                <a href="https://cliente.bonuz.it/login?tipo=bonuz&produto=jp" target="_blank"><img src="public/btn_assinar.png" alt="seta entrando em um circulo"></a>
+                <a href="https://cliente.bonuz.it/login?tipo=bonuz&produto=jp" target="_blank"><img src="public/btn_minhaconta.png" alt="representação de um usuário"></a>
+            </div>
+            <div class="dn-desk">
+                <button class="burguer" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <img src="public/icons/navHamburguer.svg" >
+                </button>
+            </div>
         </div>
-        <div class="dn-mobile">
-            <a href="https://cliente.bonuz.it/login?tipo=bonuz&produto=jp" target="_blank"><img src="public/btn_assinar.png" alt="seta entrando em um circulo"></a>
-            <a href="https://cliente.bonuz.it/login?tipo=bonuz&produto=jp" target="_blank"><img src="public/btn_minhaconta.png" alt="representação de um usuário"></a>
-        </div>
-        <div class="dn-desk">
-            <button class="burguer" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                <img src="public/icons/navHamburguer.svg" >
-            </button>
+        <div class="collapse" id="collapseExample">
+            <div class="collapse-button p-2 pt-4">
+                <a href="https://cliente.bonuz.it/login?tipo=bonuz&produto=jp" target="_blank" class="btn btn-out-white"><img src="public/icons/acessarIcon.svg" alt="seta entrando em um circulo"> Assinar</a>
+                <a href="https://cliente.bonuz.it/login?tipo=bonuz&produto=jp" target="_blank"  class="btn btn-green mx-2"><img src="public/icons/userIcon.svg" alt="representação de um usuário">Minha Conta</a>
+            </div>
         </div>
     </nav>
-    <div class="collapse" id="collapseExample">
-        <div class="bg-red p-4">
-            <a href="https://cliente.bonuz.it/login?tipo=bonuz&produto=jp" target="_blank" class="btn btn-out-white"><img src="public/icons/acessarIcon.svg" alt="seta entrando em um circulo"> Assinar</a>
-            <a href="https://cliente.bonuz.it/login?tipo=bonuz&produto=jp" target="_blank"  class="btn btn-green mx-2"><img src="public/icons/userIcon.svg" alt="representação de um usuário">Minha Conta</a>
-        </div>
-    </div>
     <main>
         <div class="fundoquadrado">
             <div class="welcome">
