@@ -44,6 +44,7 @@ p{font-size: 18px;}
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    z-index: 99999;
 }
 .whats img{
     width: 50px;
@@ -300,6 +301,9 @@ nav {
 .works h2{
     color:#6741A3 ;
 }
+.works p{
+    color: rgb(73, 80, 87);
+}
 
 .works .tracks  {
     padding-top: 4rem;
@@ -546,7 +550,7 @@ nav {
     cursor: pointer;   
 }
 
-.p-4 h3{
+/* .p-4 h3{
     position: absolute;
     width: 411px;
     height: 29px;
@@ -591,13 +595,54 @@ nav {
     padding: 12px;
     background-color: #350A7C;
     border-radius: 5px;
+} */
+
+.big-balloon .balloon p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+    color: #4E4B59;
+    width: 500px;
+}
+.big-balloon .balloon h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #4F1C77;
+}
+.big-balloon .balloon button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 12px;
+    background-color: #350A7C;
+    border-radius: 5px;
+}
+.big-balloon .balloon img {
+    width: 550px;
+    height: 100%;
+    border-radius: 16px 0 0 16px;
+}
+.big-balloon .balloon-reverse img {
+    width: 555px;
+    border-radius: 0px 16px 16px 0px;
 }
 
 #ballon-2{
     display: none;
 }
 
-.img img{
+/* .img img{
     position: absolute;
     width: 551px;
     height: 386px;
@@ -605,7 +650,7 @@ nav {
     top: 0px;
     background: url(image.png);
     border-radius: 0px 0px 16px 0px;
-}
+} */
 
 #title{
     position: absolute;
@@ -1011,15 +1056,73 @@ footer .termos, footer .termos a {
         margin: 0 auto;
     }
 
+    .assistence_h2, .assistence_p {
+        width: auto;
+    }
+
+    .big-balloon {
+        background-color: #B894FC;
+        background-image: none;
+        padding-bottom: 30px;
+    }
+    .big-balloon .balloon {
+        flex-direction: column;
+        height: 100%;
+        margin: 10px;
+        top: 0;
+    }
+
+    .big-balloon .balloon p {
+        padding-bottom: 70px;
+        width: 100%;
+    }
+
+    .img-circulo {
+        display: none;
+    }
+
+    .big-balloon .balloon img{
+        width: 100%;
+        border-radius: 0;
+        border-radius: 16px 16px 0 0 !important;
+
+    }
+
+    .balloon-reverse {
+        flex-direction: column-reverse !important;
+    }
+
     .assistence .balloon-1 {
         background-image: url('./public/cajuDiscountM.svg') !important;
         background-size: cover
+    }
+
+    .aba1, .aba2 {
+        width: auto;
     }
 
     .assistence img, .assistence .balloon-1 {
         width: 330px !important;
     }
 
+    .oferece_plano_texto {
+        width: auto;
+    }
+
+    .oferece_plano {
+        height: 629px;
+        padding: 30px 20px !important;
+    }
+
+    .oferece_plano_texto h1 {
+        font-size: 24px;
+        padding-bottom: 12px;
+    }
+
+    .oferece_plano_imagem img, .oferece_plano_imagem {
+        width: 300px;
+        margin-top: 30px;
+    }
     .works .track {
         flex-wrap: wrap;
         align-items: center;
@@ -1057,6 +1160,35 @@ footer .termos, footer .termos a {
 
     }
 
+    .economy {
+        flex-direction: column;
+        padding: 40px 10px;
+    }
+
+    .economy p {
+        font-size: 20px;
+        line-height: inherit;
+    }
+    .economy .img-content{
+        margin-top: 30px;
+    }
+    
+    .economy .normal-img{
+        width: 300px;
+    }
+
+    .economy #pontos{
+        width: 50px;
+        top: -10px !important;
+        right: -10px !important;
+    }
+
+    .economy #barras{
+        width: 200px;
+        bottom: -10px !important;
+        left: -10px !important;
+    }
+
     .swiper-button-next, .swiper-button-prev {
         color: #6741A3!important;
     }
@@ -1072,21 +1204,7 @@ footer .termos, footer .termos a {
         margin: auto !important;
         display: contents !important;
     }
-    .big-balloon {
-        height: 1000px;
-        align-items: center;
-        display: flex;
-    }
 
-    .big-balloon .balloon {
-        flex-wrap: wrap;
-        margin: 0 20px ;
-        height: 800px;
-    } 
-    .big-balloon .balloon img{
-        width: 100%;
-        border-radius: 16px 16px 0 0;
-    }
 
     .plans .card {
         width: 313px;

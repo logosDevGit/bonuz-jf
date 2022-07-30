@@ -530,15 +530,13 @@
                     <a href="https://cliente.bonuz.it/login?tipo=bonuz&produto=jp" target="_blank"><button>Quero saber mais</button></a>
                 </div>
             </div>
-            <div class="balloon" id="ballon-2">
-                
+            <div class="balloon balloon-reverse" id="ballon-2">
                 <div class="p-4">
-                    <h3 id="title">Seu colaborador em boas mãos!</h3>
-                    <p class="text">Gostaria de ajudar seus colaboradores que não estão performando tão bem por conta de problemas pessoais ou familiares? Pensando nisso, criamos o plano jurídico empresarial para o seu colaborador dormir tranquilo, sabendo que conta com a assessoria de advogados experientes para enfrentar os desafios do seu dia a dia.</p>
+                    <h3>Seu colaborador em boas mãos!</h3>
+                    <p>Gostaria de ajudar seus colaboradores que não estão performando tão bem por conta de problemas pessoais ou familiares? Pensando nisso, criamos o plano jurídico empresarial para o seu colaborador dormir tranquilo, sabendo que conta com a assessoria de advogados experientes para enfrentar os desafios do seu dia a dia.</p>
                     <a href="https://cliente.bonuz.it/login?tipo=bonuz&produto=jp" target="_blank"><button >Quero saber mais</button></a>
                 </div>
-                <div class="img"><img  src="public/reuniao.png" alt="Uma familia feliz na praia"></div>
-                <a href="https://cliente.bonuz.it/login?tipo=bonuz&produto=jp" target="_blank"><button class="but">Quero saber mais</button></a>
+                <div><img  src="public/reuniao.png" alt="Uma familia feliz na praia"></div>
             </div>
         </div>
         <div class="economy conteiner">
@@ -548,7 +546,7 @@
             </div>
             <div class="img-content">
                 <img id="pontos" src="./public/Ornament 1.png" alt="">
-                <img src="./public/familia2.png" alt="">
+                <img src="./public/familia2.png" alt="" class="normal-img">
                 <img id="barras" src="./public/Ornament 76.png" alt="">
             </div>
         </div>
@@ -929,14 +927,14 @@
             let aba2 = document.querySelector(".aba2")
             if(ballonNumber === 1){
                 ballon2.style.display = "none"
-                ballon1.style.display = "block"
+                ballon1.style.display = "flex"
                 aba1.classList.add("active")
                 aba2.classList.remove("active")
                
             }
             if(ballonNumber === 2){
                 ballon1.style.display = "none"
-                ballon2.style.display = "block"
+                ballon2.style.display = "flex"
                 aba2.classList.add("active")
                 aba1.classList.remove("active")
             }
