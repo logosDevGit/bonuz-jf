@@ -1,0 +1,1031 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 'Montserrat', sans-serif;
+    color: #33303E;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Montserrat';
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 48px;
+}
+h2 {
+    font-weight: 700;
+}
+
+p{font-size: 18px;}
+
+.dn-desk {
+    display: none !important;
+}
+.bg-red {
+    background-color: #E80537;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.whats {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: white;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.whats img{
+    width: 50px;
+    height: 50px;
+}
+
+.burguer {
+    background-color: transparent;
+    border: none;
+}
+
+.btn {
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    padding: .8rem 1rem;
+}
+
+.btn-out-white {
+    color: white;
+    border: 2px solid #FFFFFF;
+    width: 158px;
+    height: 52px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-out-white:hover {
+    color: white;
+    border: 2px solid #FFFFFF;
+}
+
+.btn-red, 
+.btn-red:hover, .btn-red:focus {
+    color: white;
+    background: #E80537;
+}
+
+.btn-green {
+    background: #350A7C;
+    border: 2px solid #350A7C;
+    font-weight: 500;
+    color: #FFF;
+    width: 158px;
+    height: 52px;
+    left: 1170px;
+    top: 22px;
+}
+
+.btn-green:hover {
+    background: #350A7C;
+    border: 2px solid #350A7C;
+    color: #FFF;
+}
+
+nav {
+    position: absolute !important;
+    background: rgba(53, 10, 124, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3.5rem;
+    width: 100%;
+    z-index: 99;
+}
+
+.logo {
+    width: 150px;
+}
+
+.conteiner{
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.fundoquadrado {
+    background: linear-gradient(98.26deg, #AB7AFC 3%, #462C6A 96.14%);
+    background-image: url('./public/retang.png');
+    background-size: cover;
+    width: 100%;
+    height: 668px;
+    left: 0px;
+    top: 0px;
+}
+
+.welcome {
+    background-image: url('./public/welcomeBg.png');
+    width: 100%;
+    max-width: 1440px;
+    background-size: cover;
+    height: 668px;
+    left: 0px;
+    top: 0px;
+}
+
+.welcome .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.welcome .info {
+    position: absolute;
+    width: 624px;
+    height: 110px;
+    left: 112px;
+    top: 182px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 124%;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+}
+
+.welcome .info p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.assistence_h2 {
+    position: absolute;
+    width: 580px;
+    height: 72px;
+    top: 689px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #350A7C;
+}
+
+.assistence_p {
+    position: absolute;
+    width: 594px;
+    height: 45px;
+    top: 750px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    line-height: 22px;
+    font-weight: 600;
+    font-size: 18px;
+
+    color: #4E4B59;
+}
+
+.assistence .balloon-1 {
+    background-image: url('./public/cajuDiscount.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 592px;
+    height: 390px;
+    font-weight:normal;
+    margin-top: 65px;
+}
+
+.assistence strong {
+    color: #E80537;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.assistence .balloon-2{
+    position: absolute;
+    width: 496px;
+    left: 839px;
+    top: 650px;
+    padding: 25px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.16);
+    border-radius: 16px;
+}
+
+.form {
+    border: none;
+}
+
+.form-h2 {
+    margin-top: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 124%;
+    letter-spacing: -0.01em;
+    color: #4E4B59;
+}
+
+.form-p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 124%;
+    letter-spacing: -0.01em;
+    color: #4E4B59;
+}
+
+.form-control {
+    box-sizing: border-box;
+    border: 1px solid #D3D2D7;
+    border-radius: 8px;
+}
+
+.form-control:hover {
+    box-sizing: border-box;
+    border: 1px solid #7683F6;
+    box-shadow: 0px 0px 0px 2px rgba(123, 97, 255, 0.43);
+    border-radius: 8px;
+}
+
+.btn-enviar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 176px;
+    height: 48px;
+    background: #350A7C;
+}
+
+.oferece_plano {
+    margin-top: 150px;
+    width: 1440px;
+    height: 379px;
+    background: #F1F1F1;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.oferece_plano_texto {
+    width: 700px;
+    font-size: 35px;
+    float: left;
+}
+
+.oferece_plano_texto p{
+    color:  #4E4B59;
+}
+
+.oferece_plano_texto h1 {
+    font-size: 35px;
+    color:#6741A3 ;
+}
+
+.oferece_plano_imagem {
+    float: right;
+    margin-top: -30px;
+}
+
+.works h2{
+    color:#6741A3 ;
+}
+
+.works .tracks  {
+    padding-top: 4rem;
+}
+.works .tracks .number {
+    font-weight: 700;
+    font-size: 78px;
+    color: #350A7C;
+}
+.works .tracks h3 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: #6741A3;
+}
+.works .tracks p {
+    font-size: 22px;
+}
+.works .track {
+    display: flex;
+    max-width: 706px;
+}
+.works .track.reverse{
+    display: flex;
+    max-width: 766px;
+    flex-direction: row-reverse;
+    margin-left: auto;
+    text-align: end;
+}
+
+.cards {
+    padding: 30px 0;
+}
+
+.cards-grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, minmax(300px, 380px));
+    gap: 30px;
+}
+
+.cards .card {
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+}
+
+.cards .card .icon{
+   background-image: url("/public/bgIcon.svg");
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   width: 120px;
+   margin: 20px auto;
+}
+.cards h2{
+    color: #6741A3;
+}
+
+.cards .card h4 {
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cards .card li {
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    padding: 0 60px;
+    color: #4E4B59;
+    list-style-type: none;
+}
+
+.cards .card ul {
+    height: 100px;
+    overflow-y: auto;
+    margin: 10px 30px;
+    padding-left: 0
+}
+
+.cards .card ul::-webkit-scrollbar {
+    background-color:#fff;
+    width: 6px
+}
+
+.cards .card ul::-webkit-scrollbar-track {
+    background-color: #D9D9D9;
+    border-radius: 8px;
+}
+
+.cards .card ul::-webkit-scrollbar-thumb {
+    background: #6741A3;
+    border-radius: 8px;
+}
+
+.cards .card ul::-webkit-scrollbar-button {display:none}
+
+/* Modal */
+
+.modal .cards-grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 240px);
+    gap: 30px;
+}
+
+.modal .card {
+    width: 240px;
+}
+
+.modal .card li{
+    padding: 0 30px;
+}
+
+.modal-dialog {
+    max-width: 900px!important;
+}
+.modal-content {
+    padding: 10px;
+}
+
+
+.big-balloon {
+    background-image: url('/public/retang.png');
+    width: 100%;
+    background-size: cover;
+    margin-top: 2rem;
+}
+
+.img-circulo{
+    width: 250px;
+    height: 230px;
+    position: relative;
+    left: 540px;
+    top: 350px;
+}
+
+.big-balloon #circulo{
+    width: 250px;
+    height: 230px;
+}
+
+.big-balloon .balloon {
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    margin: 0 auto;
+    max-width: 1100px;
+    display: flex;
+    height: 386px;
+    height: 386px;
+    top: -212px;
+}
+
+.big-balloon h3 {
+    font-weight: 600;
+    font-size: 24px;
+}
+.big-balloon p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 25px;
+}
+.big-balloon button {
+    position: absolute;
+    padding: 10px 18px;
+    bottom: 35px;
+    right: 35px;
+}
+
+.aba1{
+    width: 550px;
+    height: 52px;
+    position: relative;
+    left: 170px;
+    top: -160px;
+    background: #FAFAFA;
+    border-radius: 4px 0px 0px 0px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.aba1 a{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    color: #4E4B59;
+}
+
+.active{
+    background-color: #6741A3 !important;
+}
+
+.active a{
+    color: #fff !important;
+}
+
+.aba2 a{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    color: #4E4B59;
+}
+
+.aba2{
+    width: 550px;
+    height: 52px;
+    position: relative;
+    left: 720px;
+    top: -212px;
+    border-radius: 4px 0px 0px 0px;
+    background: #FAFAFA;
+    border-bottom: 1px solid #6741A3;
+    border-radius: 0px 4px 0px 0px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;   
+}
+
+.p-4 h3{
+    position: absolute;
+    width: 411px;
+    height: 29px;
+    left: 617px;
+    top: 45px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #4F1C77;
+}
+.p-4 p{
+    position: absolute;
+    width: 445px;
+    height: 66px;
+    left: 617px;
+    top: 75px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+    color: #4E4B59;
+}
+
+.p-4 button{
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+    width: 148px;
+    height: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 12px;
+    background-color: #350A7C;
+    border-radius: 5px;
+}
+
+#ballon-2{
+    display: none;
+}
+
+.img img{
+    position: absolute;
+    width: 551px;
+    height: 386px;
+    left: 550px;
+    top: 0px;
+    background: url(image.png);
+    border-radius: 0px 0px 16px 0px;
+}
+
+#title{
+    position: absolute;
+    width: 395px;
+    height: 29px;
+    left: 56px;
+    top: 45px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #4F1C77;
+}
+
+.p-4 .text{
+    position: absolute;
+    width: 445px;
+    height: 103px;
+    left: 56px;
+    top: 75px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+    color: #4E4B59;
+}
+
+.but{
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+    width: 148px;
+    left: 350px;
+    height: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 12px !important;
+    background-color: #350A7C;
+    border-radius: 5px;
+}
+
+.big-ballon2{
+    height: 500px;
+    width: 1170px;
+    position: relative;
+    left: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: -118px;
+}
+
+.esquerdo p{
+    
+    position: absolute;
+    width: 542px;
+    height: 77px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #4E4B59;
+    left: 0%;
+}
+
+.esquerdo button{
+  
+    height: 35px;
+    width: 150px;
+    left: -253px;
+    top: 125px;
+    border-radius: 4px;
+    position: relative;
+    width: 137px;
+    height: 38px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    flex-grow: 0;
+    background-color:#350A7C ;
+}
+
+.esquerdo a{
+    text-decoration: none;
+}
+
+
+.direito img{
+    box-sizing: border-box;
+    position: absolute;
+    width: 562px;
+    height: 242px;
+    left: 608px;
+    top: 210px;
+}
+
+.direito #barras{
+    width: 284px;
+    height: 30px;
+    top: 435px;
+    left: 555px;
+}
+
+.direito #pontos{
+    position: absolute;
+    width: 113px;
+    height: 124px;
+    left: 1078px;
+    top: 180px;
+}
+
+
+.plans-container {
+    background-image: url('./public/plansBg.png');
+    background-size: cover;
+    padding: 3rem 0;
+}
+
+.plans-container h2,p{
+    color: #FFFFFF;
+}
+
+.plans {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.plans .card{
+    width: 356px;
+    height: auto;
+    padding-bottom: 20px;
+    background-color: white;
+    box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    margin: 30px 12.5px 0 ;
+
+}
+.plans .card .header{
+    background: #6741A3;
+    border-radius: 8px 8px 0px 0px;
+    padding: 10px 4px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.plans .card .header h1,
+.plans .card .header h5,
+.plans .card .header p {
+    color: white !important;
+    margin: 0px !important;
+}
+
+.plans .card .header h1 {
+    font-size: 24px;
+    padding-top: 6px;
+    margin: 0;
+}
+
+.plans .card .header h5,
+.plans .card .header p {
+    font-size: 16px;
+}
+
+.plans ul {
+    text-align: start;
+    list-style-type: none;
+    color: #4E4B59;
+    padding: 0px 18px 0;
+}
+.plans li {
+    margin: 5px 0;
+}
+.plans ul strong{
+    color: #6741A3;
+}
+.plans .check img{
+    margin-right: 8px;
+}
+.plans .x img{
+    margin-right: 8px;
+}
+
+.plans .value {
+    margin: 0 auto;
+}
+
+.plans .position {
+    text-align: center;
+}
+
+.plans .position p{
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin: 0;
+    color: #6741A3;
+}
+.plans .position h3 {
+    font-size: 38px;
+    line-height: 150%;
+    color: #33303E;
+    font-weight: 700;
+}
+.plans .position small {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 700;
+    margin: 16px 10px;
+    color: #4E4B59;
+}
+
+.plans .value h5 {
+    font-size: 36px;
+}
+
+.plans .value p,
+.plans .value h5 {
+    color: #9997A0;
+    font-weight: 400;
+    margin: 0;
+    text-align: end;
+    margin-right: 80px;
+}
+.plans button, .plans button:hover, .plans button:focus{
+    border: none;
+    width: 80%;
+    background-color: #6741A3;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 10px 20px;
+    padding: 10px;
+}
+.plans .benefits {
+    color: #6741A3;
+    font-weight: 600;
+}
+  
+
+footer {
+    background-color: #192638;
+    padding: 45px 0;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+}
+footer .termos, footer .termos a {
+    color: #6741A3;
+    font-size: 16px;
+}
+
+@media all and (max-width: 1200px) {
+
+    .modal .cards-grid {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(1, 240px);
+        gap: 30px;
+    }
+    
+
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+
+    .dn-desk {
+        display: block!important;
+    }
+
+    .dn-mobile {
+        display: none;
+    }
+
+    nav {
+        padding: 1rem 1.5rem;
+    }
+    
+    .logo {
+        width: 200px;
+    }
+
+    .welcome {
+        height: auto;
+        padding-bottom: 100px;
+        text-align: center;
+        background-image: url('/public/bg-w-mobile.png') !important;
+    }
+    
+    .welcome .container {
+        flex-wrap: wrap;
+    }
+
+    .welcome img {
+        width: 300px;
+    }
+
+    .assistence {
+        text-align: center;
+    }
+
+    .assistence .images{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .assistence a {
+        margin: 0 auto;
+    }
+
+    .assistence .balloon-1 {
+        background-image: url('./public/cajuDiscountM.svg') !important;
+        background-size: cover
+    }
+
+    .assistence img, .assistence .balloon-1 {
+        width: 330px !important;
+    }
+
+    .works .track {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .works .track p {
+        font-weight: 400;
+        font-size: 16px;
+        color: #495057;
+    }
+
+    .track.reverse {
+        text-align: start !important;
+    }
+
+    .track.reverse .flex-row-reverse {
+        flex-direction: row !important;
+    }
+
+    .swiper {
+        width: 345px;
+        height: 300px;
+    }
+    .card {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .swiper-button-next:after, .swiper-button-prev:after,
+    .swiper-button-next, .swiper-button-prev {
+        width: 32px !important;
+        height: 32px !important;
+        font-size: 22px !important;
+        font-weight: 700;
+
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        color: #6741A3!important;
+    }
+
+    .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: 0px!important;
+    }
+    .swiper-button-next, .swiper-rtl .swiper-button-next {
+        right: 0px!important;
+    }
+
+    .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+        margin: auto !important;
+        display: contents !important;
+    }
+    .big-balloon {
+        height: 1000px;
+        align-items: center;
+        display: flex;
+    }
+
+    .big-balloon .balloon {
+        flex-wrap: wrap;
+        margin: 0 20px ;
+        height: 800px;
+    } 
+    .big-balloon .balloon img{
+        width: 100%;
+        border-radius: 16px 16px 0 0;
+    }
+
+    .plans .card {
+        width: 313px;
+    }
+    .plans .swiper {
+        height: 100%;
+    }
+
+}

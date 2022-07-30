@@ -1,0 +1,17 @@
+{
+    "name": "vinicius/mailer",
+    "require": {
+        "phpmailer/phpmailer": "^6.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vinicius\\Mailer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "viniciusbeckerbernardini",
+            "email": "vbkmma@gmail.com"
+        }
+    ]
+}
